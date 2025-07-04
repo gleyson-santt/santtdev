@@ -1,2 +1,1 @@
-um portifolio simples para exercitar meus conhecimentos basicos no frontend
-
+um portifolio simples para exercitar meus conhecimentos basicos no chatgpt
