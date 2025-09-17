@@ -1,15 +1,17 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section");
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
 
-    function revealSections() {
-        sections.forEach((section) => {
-            const sectionTop = section.getBoundingClientRect().top;
-            if (sectionTop < window.innerHeight - 50) {
-                section.classList.add("visible");
-            }
-        });
-    }
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          obs.unobserve(entry.target); // ativa uma vez só
+        }
+      });
+    },
+    { threshold: 0.2 } // dispara quando 20% da seção aparece
+  );
 
-    window.addEventListener("scroll", revealSections);
-    revealSections();
+  sections.forEach(section => observer.observe(section));
 });

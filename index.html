@@ -1,85 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gleyson, desenvolvedor de software com experiência em Back-end e Front-end.">
-    <meta name="keywords" content="desenvolvedor, back-end, front-end, Python, MySQL, HTML5, CSS3, Gleyson, Sant Dev">
-    <meta name="author" content="Gleyson Sant Dev">
-    <title>Sant Dev - Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Gleyson - Desenvolvedor Back-end e Front-end.">
+  <title>Sant Dev - Portfólio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="header">
+    <nav class="nav">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="menu" class="menu">
+        <li><a href="index.html">Sobre mim</a></li>
+        <li><a href="https://github.com/gleyson-santt" target="_blank">Projetos</a></li>
+        <li><a href="https://wa.me/5591985170448" target="_blank">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="perfil">
+      <img src="./img/Sem título.jpeg" alt="Foto de Gleyson" class="perfil-img" loading="lazy">
+      <div>
+        <h1>Sant Dev</h1>
+        <h2>Desenvolvedor de Software</h2>
+      </div>
+    </div>
+  </header>
 
-    <header>
-        <nav>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul id="menu">
-                <li><a href="index.html" aria-label="Sobre mim">Sobre mim</a></li>
-                <li><a href="https://github.com/gleyson-santt" target="_blank" rel="noopener noreferrer" aria-label="Projetos no GitHub">Projetos</a></li>
-                <li><a href="https://wa.me/5591985170448" target="_blank" rel="noopener noreferrer" aria-label="Contato pelo WhatsApp">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="perfil">
-            <img src="./img/Sem título.jpeg" alt="Foto de Gleyson, desenvolvedor de software">
-            <div class="descricao">
-                <h1>Sant Dev</h1>
-                <h2>Desenvolvedor de Software</h2>  
-            </div>
-        </div>
-    </header>
+  <main>
+    <section>
+      <h3>Sobre mim</h3>
+      <p>Oi! Me chamo Gleyson e trabalho como desenvolvedor Back-end. Gosto de criar sistemas que sejam eficientes, escaláveis e seguros. Sou apaixonado por tecnologia e estou sempre aprendendo boas práticas e explorando novas tendências.</p>
+      <p>Recentemente, comecei a me aprofundar em cybersecurity, pois acredito que segurança é essencial em qualquer sistema. Estou sempre pronto para novos desafios e animado para crescer junto com outros profissionais incríveis.</p>
+    </section>
 
-    <main>
-        <section aria-labelledby="sobre">
-            <h3 id="sobre">Sobre mim</h3>
-     Oi! Me chamo Gleyson e trabalho como desenvolvedor Back-end. Gosto de criar sistemas que não só funcionem bem, mas que sejam eficientes, escaláveis e, acima de tudo, seguros. Sou realmente apaixonado por tecnologia e estou sempre explorando novas tendências, aprendendo boas práticas e buscando evoluir a cada projeto.
+    <section>
+      <h3>Conhecimentos Técnicos</h3>
+      <div class="skills">
+        <span>Python</span>
+        <span>MySQL</span>
+        <span>HTML5</span>
+        <span>JavaScript</span>
+        <span>Versionamento</span>
+        <span>CSS3</span>
+      </div>
+    </section>
 
-Recentemente, comecei a me aprofundar no universo da cybersecurity, porque acredito que segurança é parte essencial de qualquer sistema bem feito. Estou sempre pronto para novos desafios e animado para aprender e crescer junto com outros profissionais incríveis   </section>
+    <section>
+      <h3>Formação e Certificações</h3>
+      <ul>
+        <li>Projetos de T.I - Fundação Bradesco (15h)</li>
+        <li>Introdução à POO - Fundação Bradesco (5h)</li>
+        <li>Análise e Desenvolvimento de Sistemas (Cursando)</li>
+      </ul>
+    </section>
+  </main>
 
-        <section aria-labelledby="conhecimentos">
-            <h3 id="conhecimentos">Conhecimentos Técnicos</h3>
-            <ul>
-                <li>Python</li>
-                <li>MySQL</li>
-                <li>HTML5</li>
-                <li>JavaScript</li>
-                <li>Versionamento</li>
-                <li>CSS3</li>
-            </ul>
-        </section>
-        
-        <section aria-labelledby="formacao">
-            <h3 id="formacao">Formação e Certificações</h3>
-            <ul>
-                <li>Projetos de T.I - Fundação Bradesco (15h)</li>
-                <li>Introdução à Programação Orientada a Objetos (POO) - Fundação Bradesco (5h)</li>
-                <li>Analise e desenvolvimento de sistemas (Cursando)</li>
-            </ul>
-        </section>
-    </main>
+  <footer class="footer">
+    <div class="social">
+      <a href="https://github.com/kryumoss" target="_blank" aria-label="GitHub">GitHub</a>
+      <a href="https://instagram.com/okryumo" target="_blank" aria-label="Instagram"> Instagram</a>
+      <a href="https://www.linkedin.com/in/sntdev" target="_blank" aria-label="LinkedIn"> LinkedIn</a>
+    </div>
+  </footer>
 
-    <footer>
-        <div class="redes-sociais">
-            <a href="https://github.com/gleyson-santt/" target="_blank" rel="noopener noreferrer" aria-label="Meu GitHub">
-                <img src="./img/github.svg.png" alt="Ícone do GitHub">
-                <p>GitHub</p>
-            </a>
-          
-            <a href="https://instagram.com/433.622" target="_blank" rel="noopener noreferrer" aria-label="Meu Instagram">
-                <img src="./img/Instagram-Logo.wine.svg" alt="Ícone do Instagram">
-                <p>Instagram</p>
-            </a>
-            <a href="https://www.linkedin.com/in/sntdev" target="_blank" rel="noopener noreferrer" aria-label="Meu LinkedIn">
-                <img src="./img/linkedin.svg.png" alt="Ícone do LinkedIn">
-                <p>LinkedIn</p>
-            </a>
-        </div>
-    </footer>
-
-    <script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
